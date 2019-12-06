@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
         String url=" ";
         int wordCountofMovieName=movieNameWords.length;
         if(wordCountofMovieName==1){
-            url = "http://www.omdbapi.com/?t="+mName+"&plot=full&apikey=7693bcee";
+            url = "https://www.omdbapi.com/?t="+mName+"&plot=full&apikey=7693bcee";
         }else if(wordCountofMovieName==2){
-            url="http://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"&plot=full&apikey=7693bcee";
+            url="https://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"&plot=full&apikey=7693bcee";
         }else if(wordCountofMovieName==3){
-            url="http://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"+"+movieNameWords[2]+"&plot=full&apikey=7693bcee";
+            url="https://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"+"+movieNameWords[2]+"&plot=full&apikey=7693bcee";
         }
         StringRequest request=new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
