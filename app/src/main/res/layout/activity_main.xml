@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:hint="movie name"
                 android:inputType="textNoSuggestions"
                 android:textColorHint="#404040"
@@ -36,11 +36,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:layout_weight="1"
                 android:background="#202020"
                 android:textColor="#FFFFFF"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:text="search" />
 
         </LinearLayout>
@@ -55,18 +55,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                android:autoSizeTextType="uniform"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:text="year"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
             <TextView
                 android:id="@+id/tvRating"
                 android:layout_width="match_parent"
-                android:autoSizeTextType="uniform"
                 android:textColor="#FFFFFF"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:textSize="20sp"
                 android:text="rating" />
 
@@ -76,7 +74,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:text="cast" />
 
             <TextView
@@ -84,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:textColor="#FFFFFF"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/chewy"
+                android:fontFamily="@font/bree_serif"
                 android:textSize="20sp"
                 android:text="plot"
                 android:singleLine="false"

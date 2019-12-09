@@ -3,9 +3,12 @@ package com.furkan.fmdbapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,12 +67,15 @@ public class MainActivity extends AppCompatActivity {
         String url=" ";
         int wordCountofMovieName=movieNameWords.length;
         if(wordCountofMovieName==1){
-            url = "http://www.omdbapi.com/?t="+mName+"&plot=full&apikey=7693bcee";
+            url = "https://www.omdbapi.com/?t="+mName+"&plot=full&apikey=7693bcee";
         }else if(wordCountofMovieName==2){
-            url="http://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"&plot=full&apikey=7693bcee";
+            url="https://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"&plot=full&apikey=7693bcee";
         }else if(wordCountofMovieName==3){
-            url="http://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"+"+movieNameWords[2]+"&plot=full&apikey=7693bcee";
+            url="https://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"+"+movieNameWords[2]+"&plot=full&apikey=7693bcee";
+        }else if (wordCountofMovieName==4){
+            url="https://www.omdbapi.com/?t="+movieNameWords[0]+"+"+movieNameWords[1]+"+"+movieNameWords[2]+"+"+movieNameWords[3]+"&plot=full&apikey=7693bcee";
         }
+
         StringRequest request=new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -81,13 +87,13 @@ public class MainActivity extends AppCompatActivity {
                             if (result.equals("True")){
                                 Toast.makeText(MainActivity.this,"found", Toast.LENGTH_SHORT).show();
                                 String year=movie.getString("Year");
-                                tvYear.setText("year  "+ year);
+                                tvYear.setText("year   "+ year);
                                 String rating=movie.getString("imdbRating");
                                 tvRating.setText("imdb rating   "+rating);
                                 String cast=movie.getString("Actors");
-                                tvCast.setText("cast  "+cast);
+                                tvCast.setText("cast   "+cast);
                                 String plot=movie.getString("Plot");
-                                tvPlot.setText("plot  "+ plot);
+                                tvPlot.setText("plot   "+ plot);
                                 String posterUrl=movie.getString("Poster");
                                 if(posterUrl.equals("N/A")){
 
