@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
                                 tvPlot.setText("plot   "+ plot);
                                 String posterUrl=movie.getString("Poster");
                                 if(posterUrl.equals("N/A")){
-
                                 }
                                 else{
                                     Picasso.get().load(posterUrl).into(moviePoster);
