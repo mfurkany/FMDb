@@ -25,7 +25,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/londrina_solid"
-                android:hint="movie title"
+                android:hint="movie id"
                 android:inputType="textNoSuggestions"
                 android:textColorHint="#404040"
                 android:textColor="#FF5722"
@@ -36,13 +36,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
+                android:textSize="25sp"
                 android:layout_weight="1"
                 android:background="#202020"
+                android:textColor="#FFFFFF"
                 android:textAlignment="center"
                 android:fontFamily="@font/luckiest_guy"
-                android:text="search"
-                android:textColor="#FFFFFF"
-                android:textSize="25sp" />
+                android:text="search" />
 
         </LinearLayout>
 
