@@ -20,23 +20,23 @@
 
             <EditText
                 android:id="@+id/search_bar"
-                android:layout_width="273dp"
+                android:layout_width="268dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/alfa_slab_one"
-                android:hint="movie name"
+                android:hint="movie title"
                 android:inputType="textNoSuggestions"
                 android:textColorHint="#404040"
                 android:textColor="#FF5722"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_weight="1"
                 android:background="#202020"
                 android:textColor="#FFFFFF"
@@ -58,7 +58,7 @@
                 android:fontFamily="@font/alfa_slab_one"
                 android:text="year"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvRating"
@@ -67,13 +67,13 @@
                 android:fontFamily="@font/alfa_slab_one"
                 android:text="rating"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvCast"
                 android:layout_width="match_parent"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/alfa_slab_one"
                 android:text="cast" />
@@ -84,7 +84,7 @@
                 android:textColor="#FFFFFF"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/alfa_slab_one"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:text="plot"
                 android:singleLine="false"
                 tools:ignore="MissingPrefix" />
