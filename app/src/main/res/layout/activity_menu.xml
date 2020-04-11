@@ -10,6 +10,7 @@
 
     <TextView
         android:id="@+id/searchByText"
+        android:rotation="330"
         android:layout_width="219dp"
         android:layout_height="164dp"
         android:layout_alignParentLeft="true"
@@ -18,7 +19,7 @@
         android:layout_marginTop="70dp"
         android:gravity="top"
         android:text="search by"
-        android:textColor="#FFFF"
+        android:textColor="#FF5722"
         android:fontFamily="@font/alfa_slab_one"
         android:textSize="48sp" />
 
@@ -29,7 +30,7 @@
         android:layout_height="60dp"
         android:background="#FFFFFF"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="280dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="title"
         android:textAllCaps="false"
@@ -43,7 +44,7 @@
         android:layout_height="60dp"
         android:background="#FFFFFF"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="360dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="keyword"
         android:textAllCaps="false"
@@ -56,7 +57,7 @@
         android:layout_height="60dp"
         android:background="#FFFFFF"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="440dp"
         android:fontFamily="@font/alfa_slab_one"
         android:text="imdb id"
         android:textAllCaps="false"
