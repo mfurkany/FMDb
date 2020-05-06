@@ -37,12 +37,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
-                android:background="#202020"
+                android:backgroundTint="#CC202020"
+                android:background="@drawable/rounded_buttons"
                 android:textAlignment="center"
-                android:fontFamily="@font/luckiest_guy"
+                android:fontFamily="@font/londrina_solid"
                 android:text="search"
-                android:textColor="#FF5722"
-                android:textSize="25sp" />
+                android:textColor="#FFF"
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -106,6 +107,32 @@
                 android:text=""
                 android:singleLine="false"
                 tools:ignore="MissingPrefix" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_marginTop="10dp"
+                android:isIndicator="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                />
+
+
+                <Button
+                    android:id="@+id/rateTextButton"
+                    android:background="@drawable/rounded_buttons"
+                    android:layout_gravity="center"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/londrina_solid"
+                    android:textSize="25sp"
+                    android:text=""
+                    android:textColor="#202020"></Button>
+
+
 
 
         </LinearLayout>

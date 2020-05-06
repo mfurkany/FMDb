@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MenuActivity extends AppCompatActivity {
     private Button titleButton;
     private Button keywordButton;
-    private Button imdbIdButton;
+    private Button ratingsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,8 @@ public class MenuActivity extends AppCompatActivity {
 
         titleButton=findViewById(R.id.titleButton);
         keywordButton=findViewById(R.id.keywordButton);
-        imdbIdButton=findViewById(R.id.imdbIdButton);
+        ratingsButton=findViewById(R.id.ratingsButton);
+
 
         titleButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,10 +37,11 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        imdbIdButton.setOnClickListener(new View.OnClickListener() {
+
+        ratingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openImdbIdActivity();
+                openRatingsActivity();
             }
         });
 
@@ -50,8 +52,8 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openImdbIdActivity(){
-        Intent intent=new Intent(this,ImdbIdActivity.class);
+    public void openRatingsActivity(){
+        Intent intent=new Intent(this,RatingsActivity.class);
         startActivity(intent);
     }
 }

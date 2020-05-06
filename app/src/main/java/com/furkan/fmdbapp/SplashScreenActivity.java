@@ -19,7 +19,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 .withTargetActivity(MenuActivity.class)
                 .withBackgroundColor(Color.parseColor("#202020"))
                 .withSplashTimeOut(1500)
-                .withLogo(R.mipmap.ic_launcher);
+                .withLogo(R.drawable.splashscreen);
 
         View easySplashScreen= config.create();
         setContentView(easySplashScreen);

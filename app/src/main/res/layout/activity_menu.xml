@@ -8,61 +8,57 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <TextView
-        android:id="@+id/searchByText"
-        android:rotation="330"
-        android:layout_width="219dp"
-        android:layout_height="164dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="70dp"
-        android:gravity="top"
-        android:text="search by"
-        android:textColor="#FF5722"
-        android:fontFamily="@font/alfa_slab_one"
-        android:textSize="48sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/splashscreen" />
+
 
 
     <Button
         android:id="@+id/titleButton"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_buttons"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="280dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="title"
+        android:text="search by title"
         android:textAllCaps="false"
-        android:gravity="center_horizontal|top"
+        android:gravity="center"
         android:textColor="#202020"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
+
 
     <Button
         android:id="@+id/keywordButton"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_buttons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="380dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="keyword"
+        android:text="search by keyword"
         android:textAllCaps="false"
         android:textColor="#202020"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
+
 
     <Button
-        android:id="@+id/imdbIdButton"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="#FFFFFF"
+        android:id="@+id/ratingsButton"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_buttons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="480dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="imdb id"
+        android:text="ratings"
         android:textAllCaps="false"
         android:textColor="#202020"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
+
 
 
 </RelativeLayout>
